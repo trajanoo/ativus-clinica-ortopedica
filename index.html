@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ativus - Clínica Ortopédica</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="imagex/png" href="./images/bonequinho-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      <style>
+            @import url(https://fonts.googleapis.com/css2?family=Lato&display=swap);
+            @import url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);
+            @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css);
+        </style>
+</head>
+<body>
+    <div class="">
+        <header>
+            <div class="headerTop">
+                <div class="textHeader">
+                    <p>AGENDE SEUS <span>EXAMES</span></p>
+                </div>
+    
+                <div class="contato">
+                    <div>
+                        <i class="fas fa-phone"></i>
+                        <p>(51) 3920.1000</p>
+                    </div>
+                    <div>
+                        <i class="fab fa-whatsapp"></i>
+                        <p>(51) 99189.6513</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="headerMiddle">
+                <img src="./images/logo-ativus.png" alt="">
+    
+                <div class="botoesMiddle">
+                    <button class="btnAgendar">AGENDAR CONSULTA</button>
+                    <button class="btnResultadoExames">RESULTADO DE EXAMES</button>
+                </div>
+            </div>
+    
+            <div class="headerNav">
+                <nav class="nav">
+                    <a href="index.html" class="nav-link scroll-link">HOME</a>
+                    <a class="scroll-link" href="#convenios">CONVÊNIOS</a>
+                    <a class="scroll-link" href="#contato" href="">FALE CONOSCO</a>
+                    <a class="scroll-link" href="">EXAMES</a>
+                    <a class="scroll-link" href="#consulta">AGENDE SUA CONSULTA</a>
+                    <a class="scroll-link" href="#equipeMedica">EQUIPE MÉDICA</a>
+                </nav>
+            </div>
+        </header>
+    
+        <div class="slider">
+            <div class="slides">
+                <img src="./images/slide1.avif" alt="" class="slide active" style="filter: saturate(150%);">
+                <img src="./images/slide2.avif" alt="" class="slide">
+                <img src="./images/slide3.jpg" alt="" class="slide">
+            </div>
+            <button class="prev" onclick="mudarSlide(-1)">❮</button>
+            <button class="next" onclick="mudarSlide(1)">❯</button>
+        </div>
+    
+        <div class="bemVindo">
+            <div class="sobreNos">
+                <img src="./images/medical-services3.jpg" alt="">
+                <div class="textoBemVindo">
+                    <h2>SEJA BEM-VINDO À <br> ATIVUS CLÍNICA ORTOPÉDICA</h2>
+                    <p>A Ativus Clínica Ortopédica é uma rede voltada à saúde dos ossos e articulações, com o objetivo de oferecer
+                        serviços em saúde a preços populares para todas as classes sociais, mas principalmente para quem não tem plano
+                        de saúde. A rede é composta por 7 (sete), unidades com ambientes modernos, diferenciados e com mais de 50
+                        consultórios.</p>
+                    <a href="" class="textoExtra">Saiba Mais ⟶</a>
+                </div>
+            </div>
+    
+            <div class="areasAtuacao">
+                <h2>Conheça nossas áreas de atuação</h2>
+    
+                <div class="gridAreas">
+                    <div class="area">
+                        <img src="./images/icon1.png" alt="">
+                        <p>Mais de <span>20 especialidades médicas</span></p>
+                    </div>
+                    <div class="area">
+                        <img src="./images/icon2.png" alt="">
+                        <p>Grande variedade de <span>exames</span></p>
+                    </div>
+                    <div class="area">
+                        <img src="./images/icon3.png" alt="">
+                        <p><span>Ortopedia</span> em todas as unidades S.O.S</p>
+                    </div>
+                    <div class="area">
+                        <img src="./images/icon4.png" alt="">
+                        <p><span>Telemedicina</span> consultas médicas sem sair de casa</p>
+                    </div>
+                </div>
+            </div>  
+        </div>
+
+        <div id="convenios" class="convenios">
+            <div>
+                <h2>Convênios Atendidos</h2>
+                <p class="subtituloConvenios">Confira os principais convênios aceitos em nossas unidades</p>
+            </div>
+        
+            <div class="carrosselConvenios">
+                <button class="prev2" onclick="scrollConvenios(-1)">❮</button>
+                
+                <div class="mascaraCarrossel">
+                    <div class="logosConvenios">
+                        <img class="logo" src="./images/logo-unimed.svg" alt="Unimed">
+                        <img class="logo" src="./images/logo-bradesco.png" alt="Bradesco Saúde">
+                        <img class="logo" src="./images/logo-amil.png" alt="Amil">
+                        <img class="logo" src="./images/logo-sulamerica.png" alt="SulAmérica">
+                        <img class="logo" src="./images/logo-gama-saude.gif" alt="Gama Saúde">
+                        <img class="logo" src="./images/logo-medial.png" alt="medial saude">
+                        <img class="logo" src="./images/logo-doctorclin.webp" alt="">
+                        <img class="logo" src="./images/logo-hapvida.png" alt="">
+                        <img class="logo" src="./images/logo-ccg.png" alt="">
+                    </div>
+                </div>
+        
+                <button class="next2" onclick="scrollConvenios(1)">❯</button>
+            </div>
+        </div>
+
+        <div id="contato" class="localizacaoContato">
+            <div class="containerContato">
+                <div class="infoContato">
+                    <h2>Localização e Contato</h2>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Exemplo, 123 - Porto Alegre, RS</p>
+                    <p><i class="fas fa-phone"></i> (51) 3920.1000</p>
+                    <p><i class="fab fa-whatsapp"></i> (51) 99189.6513</p>
+                    <p><i class="fas fa-envelope"></i> contato@ativus.com.br</p>
+                </div>
+                <div class="mapaContato">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.270372275258!2d-51.22918448488884!3d-30.03464729152454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197905233f8b71%3A0x92ba76a5a5fc1f59!2sPorto%20Alegre%2C%20RS!5e0!3m2!1spt-BR!2sbr!4v1710000000000"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+<div id="consulta" class="agendeConsulta h-[80vh] 2xl:h-[60vh] flex justify-around items-center bg-[#0C3DA5]">
+    <div class="agendamento flex flex-col">
+        <h2 class="text-white font-bold text-[2rem]">Agende agora sua consulta!</h2>
+        <p class="text-gray-200 text-[1.5rem]">Mais de 50 mil médicos estão prontos para te ajudar</p>
+
+        <div class="formulario bg-[#032c7c] w-[120vh]  2xl:w-[105vh] h-43 rounded-2xl">
+            <div class="botoesDeCima flex p-10">
+                <button id="local" class="rounded-full text-[15px] border text-white font-bold">No local</button>
+                <button id="teleconsulta" class="rounded-full text-[15px] border text-white font-bold">Teleconsulta</button>
+            </div>
+
+            <div class="botoesDeBaixo flex gap-4 px-10 pb-10">
+                <!-- Especialidade, doença ou nome -->
+                <label for="busca"></label>
+                <input class="botaoCidade text-black bg-white h-15 w-100 rounded-md" list="especialidades-doencas-nomes"
+                    id="busca" name="busca" placeholder="Especialidade, doença ou nome">
+                <datalist id="especialidades-doencas-nomes">
+                    <!-- Especialidades -->
+                    <option value="Cardiologia">
+                    <option value="Dermatologia">
+                    <option value="Ortopedia">
+                    <option value="Pediatria">
+                    <option value="Ginecologia">
+                    <option value="Neurologia">
+                    <option value="Psiquiatria">
+                    <option value="Endocrinologia">
+                    <option value="Oncologia">
+                    <option value="Reumatologia">
+                        <!-- Doenças -->
+                    <option value="Diabetes">
+                    <option value="Hipertensão">
+                    <option value="Asma">
+                    <option value="Ansiedade">
+                    <option value="Depressão">
+                    <option value="Lúpus">
+                    <option value="Câncer de mama">
+                    <option value="Covid-19">
+                    <option value="Enxaqueca crônica">
+                    <option value="Infecção urinária">
+                </datalist>
+
+                <!-- Cidade ou região -->
+                <label for="cidade"></label>
+                <input class="botaoCidade text-black bg-white h-15 w-90 rounded-md" list="cidades-regioes" id="cidade"
+                    name="cidade" placeholder="Cidade ou região">
+                <datalist id="cidades-regioes">
+                    <option value="São Paulo">
+                    <option value="Rio de Janeiro">
+                    <option value="Brasília">
+                    <option value="Salvador">
+                    <option value="Fortaleza">
+                    <option value="Belo Horizonte">
+                    <option value="Manaus">
+                    <option value="Curitiba">
+                    <option value="Recife">
+                    <option value="Porto Alegre">
+                    <option value="Zona Norte - SP">
+                    <option value="Zona Sul - RJ">
+                    <option value="Grande Recife">
+                </datalist>
+
+                <button class="pesquisar bg-[#2672ff] hover:bg-[#0C3DA5] transition w-35 rounded-md text-white" type="submit">
+                    <i class="lupa fas fa-search"></i>Pesquisar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="imagem">
+        <img class="md:w-100 2xl:w-120" src="images/manocelular.png" alt="">
+    </div>
+</div>
+
+    <div id="equipeMedica" class="equipeMedica h-[120vh] 2xl:h-[80vh] bg-[#F4F4F4] flex flex-col  items-center">
+        <div>
+        <h1 class="text-3xl text-[#003DA5] text-center font-bold">Equipe Médica</h1>
+        <p>Conheça nossa renomada equipe de profissionais competentes pronta para te atender</p>
+        </div>
+        
+            <div id="webcrumbs">
+            <div class="content grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
+                <div class="card rounded-2xl shadow overflow-hidden bg-white">
+                    <div class="text-center py-2">
+                    </div>
+                    <div class="p-4">
+                        <div class="pessoal flex items-start mb-3">
+                            <img
+                                src="https://images.unsplash.com/photo-1638202993928-7267aad84c31?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzkyNDZ8MHwxfHNlYXJjaHwxfHxkb2N0b3J8ZW58MHx8fHwxNzU0NDEzODMzfDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080"
+                                alt="Dr. Jorge Mitsuo Mizusaki"
+                                class="w-16 h-16 rounded mr-3"
+                                keywords="doctor, male doctor, profile picture"
+                            />
+                            <div>
+                                <div class="flex items-center">
+                                    <h3 class="font-bold">Dr. Jorge Mitsuo Mizusaki</h3>
+                                    <span class="check ml-2 text-teal-500"> <i class="fa-solid fa-circle-check"></i> </span>
+                                </div>
+                                <p class="text-sm text-gray-600">Ortopedista · Traumatologista</p>
+                                <div class="flex items-center mt-1">
+                                    <span class="text-green-500 text-sm">★</span
+                                    ><span class="text-green-500 text-sm">★</span
+                                    ><span class="text-green-500 text-sm">★</span
+                                    ><span class="text-green-500 text-sm">★</span
+                                    ><span class="text-green-500 text-sm">★</span>
+                                    <span class="opinioes text-xs text-gray-600 ml-1">152 opiniões</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-start text-sm text-gray-600 mb-3">
+                            <span class="icone mt-1 mr-2"> <i class="fa-solid fa-location-dot"></i> </span>
+                            <div>
+                                <p>
+                                    Rua Ministro Gabriel de Rezende Passos 500, Moema · Clínica Ortopédica Santa Maria
+                                </p>
+                            </div>
+                        </div>
+                        <div class="calendario grid grid-cols-3 gap-2 mb-4 text-center">
+                            <div class="border-b pb-1">
+                                <p class="font-medium">Hoje</p>
+                                <p class="text-xs text-gray-500">5 Ago</p>
+                            </div>
+                            <div class="border-b pb-1">
+                                <p class="font-medium">Amanhã</p>
+                                <p class="text-xs text-gray-500">6 Ago</p>
+                            </div>
+                            <div class="border-b pb-1 relative">
+                                <p class="font-medium">Qui,</p>
+                                <p class="text-xs text-gray-500">7 Ago</p>
+                                <button
+                                    class="absolute right-0 top-1/2 -translate-y-1/2 text-blue-500 hover:text-blue-700"
+                                >
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 mb-4">
+                            <div class="text-center">-</div>
+                            <div class="text-center">-</div>
+                            <div class="text-center bg-blue-100 rounded py-1 text-blue-700">15:10</div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 mb-4">
+                            <div class="text-center">-</div>
+                            <div class="text-center">-</div>
+                            <div class="text-center bg-blue-100 rounded py-1 text-blue-700">15:30</div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 mb-4">
+                            <div class="text-center">-</div>
+                            <div class="text-center">-</div>
+                            <div class="text-center">-</div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 mb-4">
+                            <div class="text-center">-</div>
+                            <div class="text-center">-</div>
+                            <div class="text-center">-</div>
+                        </div>
+                        <div class="text-sm mb-4">
+                            <p>Clique em uma data que melhor lhe atenda e marque uma consulta.</p>
+                            <p>Você irá receber uma confirmação por email.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card rounded-2xl shadow overflow-hidden bg-white">
+                    <div class="text-center py-2">
+                    </div>
+                    <div class="p-4">
+                        <div class="pessoal flex items-start mb-3">
+                            <img
+                                src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzkyNDZ8MHwxfHNlYXJjaHwyfHxkb2N0b3J8ZW58MHx8fHwxNzU0NDEzODMzfDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080"
+                                alt="Dr. Jose Vicente Novaes Felici"
+                                class="w-16 h-16 rounded mr-3"
+                                keywords="doctor, male doctor, profile picture"
+                            />
+                            <div>
+                                <div class="flex items-center">
+                                    <h3 class="font-bold">Dr. Jose Vicente Novaes Felici</h3>
+                                    <span class="check ml-2 text-teal-500"> <i class="fa-solid fa-circle-check"></i> </span>
+                                </div>
+                                <p class="text-sm text-gray-600">Ortopedista · Traumatologista</p>
+                                <div class="flex items-center mt-1">
+                                    <span class="text-green-500 text-sm">★</span
+                                    ><span class="text-green-500 text-sm">★</span
+                                    ><span class="text-green-500 text-sm">★</span
+                                    ><span class="text-green-500 text-sm">★</span
+                                    ><span class="text-green-500 text-sm">★</span>
+                                    <span class="opinioes text-xs text-gray-600 ml-1">99 opiniões</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-start text-sm text-gray-600 mb-3">
+                            <span class="icone mt-1 mr-2"> <i class="fa-solid fa-location-dot"></i> </span>
+                            <div>
+                                <p>
+                                    Rua Ministro Gabriel de Rezende Passos 500, Moema · Clínica Ortopédica Santa Maria
+                                </p>
+                            </div>
+                        </div>
+                        <div class="calendario grid grid-cols-3 gap-2 mb-4 text-center">
+                            <div class="border-b pb-1">
+                                <p class="font-medium">Hoje</p>
+                                <p class="text-xs text-gray-500">5 Ago</p>
+                            </div>
+                            <div class="border-b pb-1">
+                                <p class="font-medium">Amanhã</p>
+                                <p class="text-xs text-gray-500">6 Ago</p>
+                            </div>
+                            <div class="border-b pb-1 relative">
+                                <p class="font-medium">Qui,</p>
+                                <p class="text-xs text-gray-500">7 Ago</p>
+                                <button
+                                    class="absolute right-0 top-1/2 -translate-y-1/2 text-blue-500 hover:text-blue-700"
+                                >
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 mb-4">
+                            <div class="text-center">-</div>
+                            <div class="text-center">-</div>
+                            <div class="text-center bg-blue-100 rounded py-1 text-blue-700">08:30</div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 mb-4">
+                            <div class="text-center">-</div>
+                            <div class="text-center">-</div>
+                            <div class="text-center bg-blue-100 rounded py-1 text-blue-700">08:50</div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 mb-4">
+                            <div class="text-center">-</div>
+                            <div class="text-center">-</div>
+                            <div class="text-center bg-blue-100 rounded py-1 text-blue-700">09:10</div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 mb-4">
+                            <div class="text-center">-</div>
+                            <div class="text-center">-</div>
+                            <div class="text-center bg-blue-100 rounded py-1 text-blue-700">09:30</div>
+                        </div>
+                        <div class="flex justify-center mb-4">
+                        </div>
+                        <div class="text-sm mb-4">
+                            <p>Clique em uma data que melhor lhe atenda e marque uma consulta.</p>
+                            <p>Você irá receber uma confirmação por email.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card rounded-2xl shadow overflow-hidden bg-white">
+                    <div class="text-center py-2">
+                    </div>
+                    <div class="p-4">
+                        <div class="pessoal flex items-start mb-3">
+                            <img
+                                src="https://images.unsplash.com/photo-1651008376811-b90baee60c1f?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzkyNDZ8MHwxfHNlYXJjaHwzfHxkb2N0b3J8ZW58MHx8fHwxNzU0NDEzODMzfDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080"
+                                alt="Dr. Thiago Carrazzone Ferreira"
+                                class="w-16 h-16 rounded mr-3"
+                                keywords="doctor, male doctor, profile picture"
+                            />
+                            <div>
+                                <div class="flex items-center">
+                                    <h3 class="font-bold">Dr. Thiago Carrazzone Ferreira</h3>
+                                    <span class="check ml-2 text-teal-500"> <i class="fa-solid fa-circle-check"></i> </span>
+                                </div>
+                                <p class="text-sm text-gray-600">Ortopedista · Traumatologista</p>
+                                <div class="flex items-center mt-1">
+                                    <span class="text-green-500 text-sm">★</span
+                                    ><span class="text-green-500 text-sm">★</span
+                                    ><span class="text-green-500 text-sm">★</span
+                                    ><span class="text-green-500 text-sm">★</span
+                                    ><span class="text-green-500 text-sm">★</span>
+                                    <span class="opinioes text-xs text-gray-600 ml-1">34 opiniões</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-start text-sm text-gray-600 mb-3">
+                            <span class="icone mt-1 mr-2"> <i class="fa-solid fa-location-dot"></i> </span>
+                            <div>
+                                <p>
+                                    Rua Ministro Gabriel de Rezende Passos 500, Moema · Clínica Ortopédica Santa Maria
+                                </p>
+                            </div>
+                        </div>
+                        <div class="calendario grid grid-cols-3 gap-2 mb-4 text-center">
+                            <div class="border-b pb-1">
+                                <p class="font-medium">Hoje</p>
+                                <p class="text-xs text-gray-500">5 Ago</p>
+                            </div>
+                            <div class="border-b pb-1">
+                                <p class="font-medium">Amanhã</p>
+                                <p class="text-xs text-gray-500">6 Ago</p>
+                            </div>
+                            <div class="border-b pb-1 relative">
+                                <p class="font-medium">Qui,</p>
+                                <p class="text-xs text-gray-500">7 Ago</p>
+                                <button
+                                    class="absolute right-0 top-1/2 -translate-y-1/2 text-blue-500 hover:text-blue-700"
+                                >
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bg-gray-100 rounded-lg p-4 mb-4 text-center">
+                            <p class="text-gray-600 mb-2">Próximo dia disponível:</p>
+                            <p class="font-bold">02 Set, 14:30</p>
+                            <div class="mt-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <footer>
+            <p>&copy; 2025  Ativus Clínica Ortopédica. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>

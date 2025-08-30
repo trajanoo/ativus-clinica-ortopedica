@@ -1,0 +1,473 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+header{
+    color: #fff;
+}
+
+.headerTop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #003DA5;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+}
+  
+.headerTop i {
+    font-size: 15px;
+}
+
+.textHeader span{
+    font-weight: bold;
+}
+
+.contato{
+    display: flex;
+    gap: 20px;
+}
+
+.contato div{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.headerMiddle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.headerMiddle img{
+    width: 257px;
+    height: 160px;
+    object-fit: cover;
+}
+
+.botoesMiddle{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btnAgendar, .btnResultadoExames{
+    font-size: 0.75rem;
+    color: #fff;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btnAgendar{
+    background-color: #003DA5;
+}
+
+.btnAgendar:hover{
+    background-color: #0077DB;
+}
+
+.btnResultadoExames{
+    background-color: #0077DB;
+}
+
+.btnResultadoExames:hover{
+    background-color: #003DA5;
+}
+
+.headerNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.headerNav a{
+    text-decoration: none;
+    font-size: 0.70rem;
+    color: black;
+    padding: 15px 8px 1.3rem;
+    border-top: 4px solid transparent;
+}
+
+.headerNav a:hover, a.ativo{
+    border-top: 4px solid #0077DB;
+    color: #0077DB;
+}
+
+.slider{
+    height: 500px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide{
+    min-width: 100%;
+    object-fit: cover;
+}
+
+.slide.active{
+    display: block;
+}
+
+.prev, .next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.prev{ left: 10px; }
+.next{ right: 10px; }
+
+.bemVindo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin: 2rem 0;
+}
+
+.sobreNos{
+    max-height: 500px;
+    position: relative;
+}
+
+.sobreNos img {
+    width: 100%;
+    height: 500px;
+    filter: saturate(70%);
+}
+
+.textoBemVindo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    position: absolute;
+    bottom: 0;
+    background-color: #0077DB;
+    width: 100%;
+    max-width: 500px;
+    height: 45%;
+    color: #fff;
+    transition: 0.4s ease-in-out;
+}
+
+.textoBemVindo h2{
+    font-size: 1.2rem;
+    max-width: 70%;
+    margin-top: 1rem;
+}
+
+.textoBemVindo p{
+    font-size: 0.75rem;
+    max-width: 90%;
+    text-align: justify;
+    line-height: 1.2rem;
+}
+
+.sobreNos:hover .textoBemVindo{
+    height: 65%;
+    padding: 1.5rem 0 0 0;
+    gap: 1.5rem;
+}
+
+.textoExtra{
+    font-size: 0.85rem !important;
+    opacity: 0;
+    color: #fff;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.sobreNos:hover .textoExtra{
+    opacity: 1;
+}
+
+.textoExtra:hover{
+    text-decoration: underline;
+}
+
+.areasAtuacao {
+    padding: 1rem;
+    max-width: 400px;
+}
+
+.areasAtuacao h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    color: #003DA5;
+}
+
+.gridAreas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-items: center;
+}
+
+.area {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.area span{
+    font-weight: bold;
+}
+
+.areasAtuacao img {
+    height: 100px;
+    width: 100px;
+}
+
+.convenios {
+    background-color: #fff;
+    padding: 4rem 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.convenios h2 {
+    color: #003DA5;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtituloConvenios {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.carrosselConvenios {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-width: 75%;
+}
+
+.mascaraCarrossel {
+    overflow: hidden;
+    width: 90%;
+    padding: 0 3rem;
+    box-sizing: border-box;
+}
+
+.logosConvenios {
+    display: flex;
+    gap: 3rem;
+    padding: 1rem 0;
+    transition: transform 0.5s ease;
+    width: max-content;
+}
+
+.logosConvenios img {
+    height: 50px;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.logosConvenios img:hover {
+    transform: scale(1.05);
+}
+
+.prev2, .next2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: #0077DB;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+}
+
+.imagem > img {
+    filter: drop-shadow(0 0 15px rgb(138, 138, 255));
+}
+
+.prev2:hover, .next2:hover {
+    background-color: #005fa3;
+}
+
+.botaoCidade {
+    padding-left: 10px;
+}
+
+.localHover {
+    background-color: white;
+    color: black;
+    transition: 0.2s;
+}
+
+.lupa {
+    margin-right: 10px;
+}
+.hover {
+    background-color: white;
+    color: black;
+    transition: 0.2s;
+}
+
+#local:hover {
+    background-color: white;
+    color: black;
+    transition: 0.2s;
+}
+
+#teleconsulta:hover {
+    background-color: white;
+    color: black;
+    transition: 0.2s;
+}
+
+.botoesDeCima {
+    padding: 15px;
+    gap: 10px;
+}
+.botoesDeCima > * {
+    padding: 10px;
+}
+
+botoesDeCima > *:hover {
+    background-color: black;
+}
+
+.botoesDeBaixo {
+    padding: 15px;
+    gap: 10px;
+}
+
+.formulario {
+    margin-top: 20px;
+}
+
+.prev2 { left: 0px;}
+.next2 { right: 0px; }
+
+.localizacaoContato{
+    padding: 3rem 1rem 4rem ;
+    background-color: #f4f4f4;
+}
+
+.equipeMedica > div {
+    margin-top: 70px;
+}
+
+.opinioes {
+    margin-left: 5px;
+}
+
+.check {
+    margin-left: 5px;
+}
+
+.content {
+    margin: 0px 100px 0px;
+}
+
+.calendario {
+    margin-top: 30px;
+}
+
+.icone {
+    margin-right: 5px;
+}
+
+.pessoal > * {
+    padding: 5px;
+}
+
+.card {
+    padding: 20px;
+    border: solid 1px rgb(211, 211, 211);
+}
+
+.card > div > * {
+    padding: 5px;
+}
+
+.containerContato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.infoContato h2{
+    color: #003DA5;
+    margin-bottom: 1rem;
+}
+
+.infoContato p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.infoContato i{
+    color: #0077DB;
+    margin-right: 0.5rem;
+}
+
+.mapaContato{
+    width: 40%;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer{
+    width: 100%;
+    background-color: #003DA5;
+    border-top: 1px solid #fff2;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.85rem;
+    color: #ccc;
+}
